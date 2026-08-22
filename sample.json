@@ -1,0 +1,162 @@
+{
+  "materials": [
+    {
+      "material_analyzed": "Cement",
+      "specific_gravity": null,
+      "SiO2": 21.73,
+      "Al2O3": 3.6,
+      "Fe2O3": 1.5,
+      "CaO": 63.2,
+      "MgO": 3.2,
+      "SO3": 2.5,
+      "Na2O": 0.96,
+      "K2O": 0.27,
+      "LOI": 1.9,
+      "particle_size_note": null
+    },
+    {
+      "material_analyzed": "Glass Powder",
+      "specific_gravity": 2.62,
+      "SiO2": 71.4,
+      "Al2O3": 2.54,
+      "Fe2O3": 0.37,
+      "CaO": 11.2,
+      "MgO": 1.6,
+      "SO3": 0.16,
+      "Na2O": 12.25,
+      "K2O": 0.36,
+      "LOI": 0.82,
+      "particle_size_note": "particles finer than 75 \u00b5m"
+    }
+  ],
+  "conditions": [
+    {
+      "condition_id": "mortar-replacement",
+      "specimen_type": "mortar",
+      "mix_type": "replacement",
+      "concrete_grade_mpa": null,
+      "wb_ratio": 0.4,
+      "admixture_type": null,
+      "admixture_dosage_pct": null,
+      "strength_7d_mpa": {
+        "0pct": 31.3,
+        "5pct": 33.2,
+        "10pct": 34.11,
+        "15pct": 28.25,
+        "20pct": 26.15,
+        "25pct": 24.05
+      },
+      "strength_28d_mpa": {},
+      "data_source": "Table 6",
+      "low_confidence": false
+    },
+    {
+      "condition_id": "concrete-replacement-33MPa",
+      "specimen_type": "concrete",
+      "mix_type": "replacement",
+      "concrete_grade_mpa": 33,
+      "wb_ratio": 0.5,
+      "admixture_type": "high range water reducing admixture (ASTM C494)",
+      "admixture_dosage_pct": 1.8,
+      "strength_7d_mpa": {
+        "0pct": 28.7,
+        "5pct": 30.1,
+        "10pct": 27.38,
+        "15pct": 26.89,
+        "20pct": 26.09,
+        "25pct": 25.38
+      },
+      "strength_28d_mpa": {
+        "0pct": 32.2,
+        "5pct": 33.84,
+        "10pct": 30.75,
+        "15pct": 29.18,
+        "20pct": 28.1,
+        "25pct": 27.24
+      },
+      "data_source": "Table 7",
+      "low_confidence": false
+    },
+    {
+      "condition_id": "concrete-replacement-45MPa",
+      "specimen_type": "concrete",
+      "mix_type": "replacement",
+      "concrete_grade_mpa": 45,
+      "wb_ratio": 0.35,
+      "admixture_type": "high range water reducing admixture (ASTM C494)",
+      "admixture_dosage_pct": 1.8,
+      "strength_7d_mpa": {
+        "0pct": 36.49,
+        "5pct": 36.42,
+        "10pct": 38.51,
+        "15pct": 36.23,
+        "20pct": 34.09,
+        "25pct": 32.6
+      },
+      "strength_28d_mpa": {
+        "0pct": 44.32,
+        "5pct": 45.42,
+        "10pct": 46.45,
+        "15pct": 40.14,
+        "20pct": 39.39,
+        "25pct": 38.08
+      },
+      "data_source": "Table 7",
+      "low_confidence": false
+    },
+    {
+      "condition_id": "concrete-addition-33MPa",
+      "specimen_type": "concrete",
+      "mix_type": "addition",
+      "concrete_grade_mpa": 33,
+      "wb_ratio": 0.5,
+      "admixture_type": "high range water reducing admixture (ASTM C494)",
+      "admixture_dosage_pct": 1.8,
+      "strength_7d_mpa": {
+        "0pct": 28.7,
+        "5pct": 31.1,
+        "10pct": 32.5,
+        "15pct": 34.2,
+        "20pct": 29.5,
+        "25pct": 29.28
+      },
+      "strength_28d_mpa": {
+        "0pct": 32.2,
+        "5pct": 33.7,
+        "10pct": 36.9,
+        "15pct": 37.9,
+        "20pct": 33.0,
+        "25pct": 31.1
+      },
+      "data_source": "Table 9",
+      "low_confidence": false
+    },
+    {
+      "condition_id": "concrete-addition-45MPa",
+      "specimen_type": "concrete",
+      "mix_type": "addition",
+      "concrete_grade_mpa": 45,
+      "wb_ratio": 0.35,
+      "admixture_type": "high range water reducing admixture (ASTM C494)",
+      "admixture_dosage_pct": 1.8,
+      "strength_7d_mpa": {
+        "0pct": 36.49,
+        "5pct": 38.6,
+        "10pct": 39.2,
+        "15pct": 40.7,
+        "20pct": 41.8,
+        "25pct": 40.9
+      },
+      "strength_28d_mpa": {
+        "0pct": 44.32,
+        "5pct": 45.76,
+        "10pct": 46.84,
+        "15pct": 47.5,
+        "20pct": 49.21,
+        "25pct": 48.43
+      },
+      "data_source": "Table 9",
+      "low_confidence": false
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Secrets / API keys
+.env
+
+# Python bytecode & caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Outputs
+output.json
+*.log
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
