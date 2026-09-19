@@ -1,0 +1,444 @@
+{
+  "response": {
+    "materials": [
+      {
+        "material_analyzed": "Portland cement",
+        "specific_gravity": null,
+        "SiO2": 21.73,
+        "Al2O3": 3.6,
+        "Fe2O3": 1.5,
+        "CaO": 63.2,
+        "MgO": 3.2,
+        "SO3": 2.5,
+        "Na2O": 0.96,
+        "K2O": 0.27,
+        "LOI": 1.9,
+        "particle_size_note": null
+      },
+      {
+        "material_analyzed": "Glass powder",
+        "specific_gravity": 2.62,
+        "SiO2": 71.4,
+        "Al2O3": 2.54,
+        "Fe2O3": 0.37,
+        "CaO": 11.2,
+        "MgO": 1.6,
+        "SO3": 0.16,
+        "Na2O": 12.25,
+        "K2O": 0.36,
+        "LOI": 0.82,
+        "particle_size_note": "particles finer than 75 μm"
+      }
+    ],
+    "conditions": [
+      {
+        "condition_id": "cond_33_repl_0pct",
+        "specimen_type": "concrete",
+        "mix_type": "replacement",
+        "concrete_grade_mpa": 33,
+        "wb_ratio": 0.5,
+        "admixture_type": "water reducing admixture",
+        "admixture_dosage_pct": 1.8,
+        "strength_7d_mpa": {
+          "0pct": 28.7
+        },
+        "strength_28d_mpa": {
+          "0pct": 32.2
+        },
+        "data_source": "Table7",
+        "low_confidence": false
+      },
+      {
+        "condition_id": "cond_33_repl_5pct",
+        "specimen_type": "concrete",
+        "mix_type": "replacement",
+        "concrete_grade_mpa": 33,
+        "wb_ratio": 0.5,
+        "admixture_type": "water reducing admixture",
+        "admixture_dosage_pct": 1.8,
+        "strength_7d_mpa": {
+          "5pct": 30.1
+        },
+        "strength_28d_mpa": {
+          "5pct": 33.84
+        },
+        "data_source": "Table7",
+        "low_confidence": false
+      },
+      {
+        "condition_id": "cond_33_repl_10pct",
+        "specimen_type": "concrete",
+        "mix_type": "replacement",
+        "concrete_grade_mpa": 33,
+        "wb_ratio": 0.5,
+        "admixture_type": "water reducing admixture",
+        "admixture_dosage_pct": 1.8,
+        "strength_7d_mpa": {
+          "10pct": 27.38
+        },
+        "strength_28d_mpa": {
+          "10pct": 30.75
+        },
+        "data_source": "Table7",
+        "low_confidence": false
+      },
+      {
+        "condition_id": "cond_33_repl_15pct",
+        "specimen_type": "concrete",
+        "mix_type": "replacement",
+        "concrete_grade_mpa": 33,
+        "wb_ratio": 0.5,
+        "admixture_type": "water reducing admixture",
+        "admixture_dosage_pct": 1.8,
+        "strength_7d_mpa": {
+          "15pct": 26.89
+        },
+        "strength_28d_mpa": {
+          "15pct": 29.18
+        },
+        "data_source": "Table7",
+        "low_confidence": false
+      },
+      {
+        "condition_id": "cond_33_repl_20pct",
+        "specimen_type": "concrete",
+        "mix_type": "replacement",
+        "concrete_grade_mpa": 33,
+        "wb_ratio": 0.5,
+        "admixture_type": "water reducing admixture",
+        "admixture_dosage_pct": 1.8,
+        "strength_7d_mpa": {
+          "20pct": 26.09
+        },
+        "strength_28d_mpa": {
+          "20pct": 28.1
+        },
+        "data_source": "Table7",
+        "low_confidence": false
+      },
+      {
+        "condition_id": "cond_33_repl_25pct",
+        "specimen_type": "concrete",
+        "mix_type": "replacement",
+        "concrete_grade_mpa": 33,
+        "wb_ratio": 0.5,
+        "admixture_type": "water reducing admixture",
+        "admixture_dosage_pct": 1.8,
+        "strength_7d_mpa": {
+          "25pct": 25.38
+        },
+        "strength_28d_mpa": {
+          "25pct": 27.24
+        },
+        "data_source": "Table7",
+        "low_confidence": false
+      },
+      {
+        "condition_id": "cond_33_add_0pct",
+        "specimen_type": "concrete",
+        "mix_type": "addition",
+        "concrete_grade_mpa": 33,
+        "wb_ratio": 0.5,
+        "admixture_type": "water reducing admixture",
+        "admixture_dosage_pct": 1.8,
+        "strength_7d_mpa": {
+          "0pct": 28.7
+        },
+        "strength_28d_mpa": {
+          "0pct": 32.2
+        },
+        "data_source": "Table9",
+        "low_confidence": false
+      },
+      {
+        "condition_id": "cond_33_add_5pct",
+        "specimen_type": "concrete",
+        "mix_type": "addition",
+        "concrete_grade_mpa": 33,
+        "wb_ratio": 0.5,
+        "admixture_type": "water reducing admixture",
+        "admixture_dosage_pct": 1.8,
+        "strength_7d_mpa": {
+          "5pct": 31.1
+        },
+        "strength_28d_mpa": {
+          "5pct": 33.7
+        },
+        "data_source": "Table9",
+        "low_confidence": false
+      },
+      {
+        "condition_id": "cond_33_add_10pct",
+        "specimen_type": "concrete",
+        "mix_type": "addition",
+        "concrete_grade_mpa": 33,
+        "wb_ratio": 0.5,
+        "admixture_type": "water reducing admixture",
+        "admixture_dosage_pct": 1.8,
+        "strength_7d_mpa": {
+          "10pct": 32.5
+        },
+        "strength_28d_mpa": {
+          "10pct": 36.9
+        },
+        "data_source": "Table9",
+        "low_confidence": false
+      },
+      {
+        "condition_id": "cond_33_add_15pct",
+        "specimen_type": "concrete",
+        "mix_type": "addition",
+        "concrete_grade_mpa": 33,
+        "wb_ratio": 0.5,
+        "admixture_type": "water reducing admixture",
+        "admixture_dosage_pct": 1.8,
+        "strength_7d_mpa": {
+          "15pct": 34.2
+        },
+        "strength_28d_mpa": {
+          "15pct": 37.9
+        },
+        "data_source": "Table9",
+        "low_confidence": false
+      },
+      {
+        "condition_id": "cond_33_add_20pct",
+        "specimen_type": "concrete",
+        "mix_type": "addition",
+        "concrete_grade_mpa": 33,
+        "wb_ratio": 0.5,
+        "admixture_type": "water reducing admixture",
+        "admixture_dosage_pct": 1.8,
+        "strength_7d_mpa": {
+          "20pct": 29.5
+        },
+        "strength_28d_mpa": {
+          "20pct": 33
+        },
+        "data_source": "Table9",
+        "low_confidence": false
+      },
+      {
+        "condition_id": "cond_33_add_25pct",
+        "specimen_type": "concrete",
+        "mix_type": "addition",
+        "concrete_grade_mpa": 33,
+        "wb_ratio": 0.5,
+        "admixture_type": "water reducing admixture",
+        "admixture_dosage_pct": 1.8,
+        "strength_7d_mpa": {
+          "25pct": 29.28
+        },
+        "strength_28d_mpa": {
+          "25pct": 31.1
+        },
+        "data_source": "Table9",
+        "low_confidence": false
+      },
+      {
+        "condition_id": "cond_45_repl_0pct",
+        "specimen_type": "concrete",
+        "mix_type": "replacement",
+        "concrete_grade_mpa": 45,
+        "wb_ratio": 0.35,
+        "admixture_type": "water reducing admixture",
+        "admixture_dosage_pct": 1.8,
+        "strength_7d_mpa": {
+          "0pct": 36.49
+        },
+        "strength_28d_mpa": {
+          "0pct": 44.32
+        },
+        "data_source": "Table7",
+        "low_confidence": false
+      },
+      {
+        "condition_id": "cond_45_repl_5pct",
+        "specimen_type": "concrete",
+        "mix_type": "replacement",
+        "concrete_grade_mpa": 45,
+        "wb_ratio": 0.35,
+        "admixture_type": "water reducing admixture",
+        "admixture_dosage_pct": 1.8,
+        "strength_7d_mpa": {
+          "5pct": 36.42
+        },
+        "strength_28d_mpa": {
+          "5pct": 45.42
+        },
+        "data_source": "Table7",
+        "low_confidence": false
+      },
+      {
+        "condition_id": "cond_45_repl_10pct",
+        "specimen_type": "concrete",
+        "mix_type": "replacement",
+        "concrete_grade_mpa": 45,
+        "wb_ratio": 0.35,
+        "admixture_type": "water reducing admixture",
+        "admixture_dosage_pct": 1.8,
+        "strength_7d_mpa": {
+          "10pct": 38.51
+        },
+        "strength_28d_mpa": {
+          "10pct": 46.45
+        },
+        "data_source": "Table7",
+        "low_confidence": false
+      },
+      {
+        "condition_id": "cond_45_repl_15pct",
+        "specimen_type": "concrete",
+        "mix_type": "replacement",
+        "concrete_grade_mpa": 45,
+        "wb_ratio": 0.35,
+        "admixture_type": "water reducing admixture",
+        "admixture_dosage_pct": 1.8,
+        "strength_7d_mpa": {
+          "15pct": 36.23
+        },
+        "strength_28d_mpa": {
+          "15pct": 40.14
+        },
+        "data_source": "Table7",
+        "low_confidence": false
+      },
+      {
+        "condition_id": "cond_45_repl_20pct",
+        "specimen_type": "concrete",
+        "mix_type": "replacement",
+        "concrete_grade_mpa": 45,
+        "wb_ratio": 0.35,
+        "admixture_type": "water reducing admixture",
+        "admixture_dosage_pct": 1.8,
+        "strength_7d_mpa": {
+          "20pct": 34.09
+        },
+        "strength_28d_mpa": {
+          "20pct": 39.39
+        },
+        "data_source": "Table7",
+        "low_confidence": false
+      },
+      {
+        "condition_id": "cond_45_repl_25pct",
+        "specimen_type": "concrete",
+        "mix_type": "replacement",
+        "concrete_grade_mpa": 45,
+        "wb_ratio": 0.35,
+        "admixture_type": "water reducing admixture",
+        "admixture_dosage_pct": 1.8,
+        "strength_7d_mpa": {
+          "25pct": 32.6
+        },
+        "strength_28d_mpa": {
+          "25pct": 38.08
+        },
+        "data_source": "Table7",
+        "low_confidence": false
+      },
+      {
+        "condition_id": "cond_45_add_0pct",
+        "specimen_type": "concrete",
+        "mix_type": "addition",
+        "concrete_grade_mpa": 45,
+        "wb_ratio": 0.35,
+        "admixture_type": "water reducing admixture",
+        "admixture_dosage_pct": 1.8,
+        "strength_7d_mpa": {
+          "0pct": 36.49
+        },
+        "strength_28d_mpa": {
+          "0pct": 44.32
+        },
+        "data_source": "Table9",
+        "low_confidence": false
+      },
+      {
+        "condition_id": "cond_45_add_5pct",
+        "specimen_type": "concrete",
+        "mix_type": "addition",
+        "concrete_grade_mpa": 45,
+        "wb_ratio": 0.35,
+        "admixture_type": "water reducing admixture",
+        "admixture_dosage_pct": 1.8,
+        "strength_7d_mpa": {
+          "5pct": 38.6
+        },
+        "strength_28d_mpa": {
+          "5pct": 45.76
+        },
+        "data_source": "Table9",
+        "low_confidence": false
+      },
+      {
+        "condition_id": "cond_45_add_10pct",
+        "specimen_type": "concrete",
+        "mix_type": "addition",
+        "concrete_grade_mpa": 45,
+        "wb_ratio": 0.35,
+        "admixture_type": "water reducing admixture",
+        "admixture_dosage_pct": 1.8,
+        "strength_7d_mpa": {
+          "10pct": 39.2
+        },
+        "strength_28d_mpa": {
+          "10pct": 46.84
+        },
+        "data_source": "Table9",
+        "low_confidence": false
+      },
+      {
+        "condition_id": "cond_45_add_15pct",
+        "specimen_type": "concrete",
+        "mix_type": "addition",
+        "concrete_grade_mpa": 45,
+        "wb_ratio": 0.35,
+        "admixture_type": "water reducing admixture",
+        "admixture_dosage_pct": 1.8,
+        "strength_7d_mpa": {
+          "15pct": 40.7
+        },
+        "strength_28d_mpa": {
+          "15pct": 47.5
+        },
+        "data_source": "Table9",
+        "low_confidence": false
+      },
+      {
+        "condition_id": "cond_45_add_20pct",
+        "specimen_type": "concrete",
+        "mix_type": "addition",
+        "concrete_grade_mpa": 45,
+        "wb_ratio": 0.35,
+        "admixture_type": "water reducing admixture",
+        "admixture_dosage_pct": 1.8,
+        "strength_7d_mpa": {
+          "20pct": 41.8
+        },
+        "strength_28d_mpa": {
+          "20pct": 49.21
+        },
+        "data_source": "Table9",
+        "low_confidence": false
+      },
+      {
+        "condition_id": "cond_45_add_25pct",
+        "specimen_type": "concrete",
+        "mix_type": "addition",
+        "concrete_grade_mpa": 45,
+        "wb_ratio": 0.35,
+        "admixture_type": "water reducing admixture",
+        "admixture_dosage_pct": 1.8,
+        "strength_7d_mpa": {
+          "25pct": 40.9
+        },
+        "strength_28d_mpa": {
+          "25pct": 48.43
+        },
+        "data_source": "Table9",
+        "low_confidence": false
+      }
+    ]
+  }
+}
