@@ -54,17 +54,6 @@ function pick(obj, key) {
   return v === null || v === undefined ? '' : v
 }
 
-function matchMaterial(materials, name) {
-  if (!Array.isArray(materials) || materials.length === 0) return null
-  if (name) {
-    const hit = materials.find(
-      (m) => String((m && m.material_analyzed) || '').toLowerCase() === String(name).toLowerCase()
-    )
-    if (hit) return hit
-  }
-  return materials.length === 1 ? materials[0] : null
-}
-
 export function buildRows({ response, fileName }) {
   const paper = (response && response.paper) || {}
   const materials = Array.isArray(response && response.materials) ? response.materials : []
@@ -73,41 +62,44 @@ export function buildRows({ response, fileName }) {
   const rawName = (fileName || '').replace(/\.(pdf|xlsx)$/i, '')
   const fileBase = paper.file_name || rawName || fileName || ''
 
-  return conditions.map((cond) => {
-    const mat = matchMaterial(materials, cond.material_analyzed)
-    const row = {}
-    row.file_name = fileBase
-    row.paper_title = pick(paper, 'paper_title')
-    row.year = pick(paper, 'year')
-    row.source_or_type = pick(paper, 'source_or_type')
-    row.material_analyzed = pick(mat || cond, 'material_analyzed')
-    row.condition_id = pick(cond, 'condition_id')
-    row.specimen_type = pick(cond, 'specimen_type')
-    row.mix_type = pick(cond, 'mix_type')
-    row.concrete_grade_mpa = pick(cond, 'concrete_grade_mpa')
-    METAL_COLS.forEach((c) => {
-      row[c] = pick(mat, c)
-    })
-    row.wb_ratio = pick(cond, 'wb_ratio')
-    row.admixture_type = pick(cond, 'admixture_type')
-    row.admixture_dosage_pct = pick(cond, 'admixture_dosage_pct')
+  const materialPool = materials.length > 0 ? materials : [null]
 
-    for (const age of AGES) {
-      const mpaMap = cond[`strength_${age}_mpa`]
-      const base = toNum(findPct(mpaMap, '0pct'))
-      PCTS.forEach((p) => {
-        const v = toNum(findPct(mpaMap, p))
-        row[`strength_${age}_${p}_mpa`] = v ?? ''
-        const pctControl =
-          v !== undefined && base !== undefined && base > 0
-            ? Math.round((v / base) * 100 * 100) / 100
-            : ''
-        row[`strength_${age}_${p}_pctcontrol`] = pctControl
+  return conditions.flatMap((cond) =>
+    materialPool.map((mat) => {
+      const row = {}
+      row.file_name = fileBase
+      row.paper_title = pick(paper, 'paper_title')
+      row.year = pick(paper, 'year')
+      row.source_or_type = pick(paper, 'source_or_type')
+      row.material_analyzed = pick(mat || cond, 'material_analyzed')
+      row.condition_id = pick(cond, 'condition_id')
+      row.specimen_type = pick(cond, 'specimen_type')
+      row.mix_type = pick(cond, 'mix_type')
+      row.concrete_grade_mpa = pick(cond, 'concrete_grade_mpa')
+      METAL_COLS.forEach((c) => {
+        row[c] = pick(mat, c)
       })
-    }
+      row.wb_ratio = pick(cond, 'wb_ratio')
+      row.admixture_type = pick(cond, 'admixture_type')
+      row.admixture_dosage_pct = pick(cond, 'admixture_dosage_pct')
 
-    return DESIRED_COLUMNS.map((c) => row[c])
-  })
+      for (const age of AGES) {
+        const mpaMap = cond[`strength_${age}_mpa`]
+        const base = toNum(findPct(mpaMap, '0pct'))
+        PCTS.forEach((p) => {
+          const v = toNum(findPct(mpaMap, p))
+          row[`strength_${age}_${p}_mpa`] = v ?? ''
+          const pctControl =
+            v !== undefined && base !== undefined && base > 0
+              ? Math.round((v / base) * 100 * 100) / 100
+              : ''
+          row[`strength_${age}_${p}_pctcontrol`] = pctControl
+        })
+      }
+
+      return DESIRED_COLUMNS.map((c) => row[c])
+    })
+  )
 }
 
 function buildRawRows(response) {
